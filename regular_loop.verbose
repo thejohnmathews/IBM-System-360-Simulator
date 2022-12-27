@@ -1,0 +1,401 @@
+
+behavioral simulation of S/360 subset
+
+(memory is limited to 4096 bytes in this simulation)
+(addresses, register values, and memory values are shown in hexadecimal)
+
+initial contents of memory arranged by bytes
+addr value
+000: 58
+001: 00
+002: 00
+003: 38
+004: 58
+005: 10
+006: 00
+007: 3c
+008: 58
+009: 20
+00a: 00
+00b: 40
+00c: 58
+00d: 30
+00e: 00
+00f: 44
+010: 58
+011: 40
+012: 00
+013: 48
+014: 59
+015: 00
+016: 00
+017: 4c
+018: 47
+019: 20
+01a: 00
+01b: 28
+01c: 50
+01d: 20
+01e: 30
+01f: 00
+020: 1a
+021: 34
+022: 1a
+023: 01
+024: 47
+025: f0
+026: 00
+027: 14
+028: 47
+029: 00
+02a: 00
+02b: 14
+02c: 47
+02d: 10
+02e: 00
+02f: 14
+030: 47
+031: 40
+032: 00
+033: 14
+034: 00
+035: 00
+036: 00
+037: 00
+038: 00
+039: 00
+03a: 00
+03b: 00
+03c: 00
+03d: 00
+03e: 00
+03f: 01
+040: 10
+041: 20
+042: 30
+043: 40
+044: 00
+045: 00
+046: 00
+047: 50
+048: 00
+049: 00
+04a: 00
+04b: 04
+04c: 00
+04d: 00
+04e: 00
+04f: 03
+050: 00
+051: 00
+052: 00
+053: 00
+054: 00
+055: 00
+056: 00
+057: 00
+058: 00
+059: 00
+05a: 00
+05b: 00
+05c: 00
+05d: 00
+05e: 00
+05f: 00
+060: 00
+061: 00
+062: 00
+063: 00
+
+initial pc, condition code, and register values are all zero
+
+updated pc, condition code, and register values are shown after
+ each instruction has been executed
+
+L instruction, operand 1 is R0, operand 2 at address 000038
+instruction address = 000004, condition code = 0
+R0 = 00000000, R4 = 00000000, R8 = 00000000, RC = 00000000
+R1 = 00000000, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 00000000, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000000, R7 = 00000000, RB = 00000000, RF = 00000000
+
+L instruction, operand 1 is R1, operand 2 at address 00003c
+instruction address = 000008, condition code = 0
+R0 = 00000000, R4 = 00000000, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 00000000, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000000, R7 = 00000000, RB = 00000000, RF = 00000000
+
+L instruction, operand 1 is R2, operand 2 at address 000040
+instruction address = 00000c, condition code = 0
+R0 = 00000000, R4 = 00000000, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000000, R7 = 00000000, RB = 00000000, RF = 00000000
+
+L instruction, operand 1 is R3, operand 2 at address 000044
+instruction address = 000010, condition code = 0
+R0 = 00000000, R4 = 00000000, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000050, R7 = 00000000, RB = 00000000, RF = 00000000
+
+L instruction, operand 1 is R4, operand 2 at address 000048
+instruction address = 000014, condition code = 0
+R0 = 00000000, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000050, R7 = 00000000, RB = 00000000, RF = 00000000
+
+C instruction, operand 1 is R0, operand 2 at address 00004c
+instruction address = 000018, condition code = 1
+R0 = 00000000, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000050, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 2, branch target is address 000028
+instruction address = 00001c, condition code = 1
+R0 = 00000000, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000050, R7 = 00000000, RB = 00000000, RF = 00000000
+
+ST instruction, operand 1 is R2, operand 2 at address 000050
+instruction address = 000020, condition code = 1
+R0 = 00000000, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000050, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R3, operand 2 is R4
+instruction address = 000022, condition code = 2
+R0 = 00000000, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000054, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R0, operand 2 is R1
+instruction address = 000024, condition code = 2
+R0 = 00000001, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000054, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is f, branch target is address 000014
+instruction address = 000014, condition code = 2
+R0 = 00000001, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000054, R7 = 00000000, RB = 00000000, RF = 00000000
+
+C instruction, operand 1 is R0, operand 2 at address 00004c
+instruction address = 000018, condition code = 1
+R0 = 00000001, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000054, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 2, branch target is address 000028
+instruction address = 00001c, condition code = 1
+R0 = 00000001, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000054, R7 = 00000000, RB = 00000000, RF = 00000000
+
+ST instruction, operand 1 is R2, operand 2 at address 000054
+instruction address = 000020, condition code = 1
+R0 = 00000001, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000054, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R3, operand 2 is R4
+instruction address = 000022, condition code = 2
+R0 = 00000001, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000058, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R0, operand 2 is R1
+instruction address = 000024, condition code = 2
+R0 = 00000002, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000058, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is f, branch target is address 000014
+instruction address = 000014, condition code = 2
+R0 = 00000002, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000058, R7 = 00000000, RB = 00000000, RF = 00000000
+
+C instruction, operand 1 is R0, operand 2 at address 00004c
+instruction address = 000018, condition code = 1
+R0 = 00000002, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000058, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 2, branch target is address 000028
+instruction address = 00001c, condition code = 1
+R0 = 00000002, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000058, R7 = 00000000, RB = 00000000, RF = 00000000
+
+ST instruction, operand 1 is R2, operand 2 at address 000058
+instruction address = 000020, condition code = 1
+R0 = 00000002, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000058, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R3, operand 2 is R4
+instruction address = 000022, condition code = 2
+R0 = 00000002, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 0000005c, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R0, operand 2 is R1
+instruction address = 000024, condition code = 2
+R0 = 00000003, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 0000005c, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is f, branch target is address 000014
+instruction address = 000014, condition code = 2
+R0 = 00000003, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 0000005c, R7 = 00000000, RB = 00000000, RF = 00000000
+
+C instruction, operand 1 is R0, operand 2 at address 00004c
+instruction address = 000018, condition code = 0
+R0 = 00000003, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 0000005c, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 2, branch target is address 000028
+instruction address = 00001c, condition code = 0
+R0 = 00000003, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 0000005c, R7 = 00000000, RB = 00000000, RF = 00000000
+
+ST instruction, operand 1 is R2, operand 2 at address 00005c
+instruction address = 000020, condition code = 0
+R0 = 00000003, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 0000005c, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R3, operand 2 is R4
+instruction address = 000022, condition code = 2
+R0 = 00000003, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+AR instruction, operand 1 is R0, operand 2 is R1
+instruction address = 000024, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is f, branch target is address 000014
+instruction address = 000014, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+C instruction, operand 1 is R0, operand 2 at address 00004c
+instruction address = 000018, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 2, branch target is address 000028
+instruction address = 000028, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 0, branch target is address 000014
+instruction address = 00002c, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 1, branch target is address 000014
+instruction address = 000030, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+BC instruction, mask is 4, branch target is address 000014
+instruction address = 000034, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+Halt encountered
+instruction address = 000036, condition code = 2
+R0 = 00000004, R4 = 00000004, R8 = 00000000, RC = 00000000
+R1 = 00000001, R5 = 00000000, R9 = 00000000, RD = 00000000
+R2 = 10203040, R6 = 00000000, RA = 00000000, RE = 00000000
+R3 = 00000060, R7 = 00000000, RB = 00000000, RF = 00000000
+
+final contents of memory arranged by words
+addr value
+000: 58000038
+004: 5810003c
+008: 58200040
+00c: 58300044
+010: 58400048
+014: 5900004c
+018: 47200028
+01c: 50203000
+020: 1a341a01
+024: 47f00014
+028: 47000014
+02c: 47100014
+030: 47400014
+034: 00000000
+038: 00000000
+03c: 00000001
+040: 10203040
+044: 00000050
+048: 00000004
+04c: 00000003
+050: 10203040
+054: 10203040
+058: 10203040
+05c: 10203040
+060: 00000000
+
+execution statistics
+  instruction fetches = 34
+    LR  instructions  = 0
+    CR  instructions  = 0
+    AR  instructions  = 8
+    SR  instructions  = 0
+    LA  instructions  = 0
+    BCT instructions  = 0
+    BC  instructions  = 12, taken = 5 (41.7%)
+    ST  instructions  = 4
+    L   instructions  = 5
+    C   instructions  = 5
+  memory data reads   = 10
+  memory data writes  = 4
